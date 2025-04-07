@@ -173,6 +173,7 @@ def main(scene, reference_dir="reference",
     # 1) Collect all .mp4 files
     # ------------------------------------------------------------------
     video_paths = gather_mp4_files(reference_dir) # len(video_paths) = 45
+    print(f'video_paths len {len(video_paths)}')
 
     # Prepare lists to store rows for CSVs
     video_info_rows = []
@@ -231,7 +232,7 @@ def main(scene, reference_dir="reference",
 
             patch_filename = f"{video_id}_frame{frame_number}.jpg"
             patch_path_full = os.path.join(patches_output_dir, patch_filename)
-            # cv2.imwrite(patch_path_full, patch_bgr)
+            cv2.imwrite(patch_path_full, patch_bgr)
 
             # Add row to patch_info
             patch_info_rows.append({
@@ -245,7 +246,7 @@ def main(scene, reference_dir="reference",
         print(f'{frames_extracted} frames extracted for {video_id}.')
 
         cap.release()
-        break
+        # break
 
     # ------------------------------------------------------------------
     # 3) Save CSVs
@@ -302,7 +303,7 @@ if __name__ == "__main__":
     for scene in scenes:
         main(
             scene,
-            reference_dir=f"{VRRMP4}/uploaded/reference/{scene}",
+            reference_dir=f"{VRRMP4}/reference/{scene}",
             patches_output_dir=f"{VRRML_DATA}/ML_regression/{date_today}/{folder_name}/patches",
             video_info_csv=f"{VRRML_DATA}/ML_regression/{date_today}/{folder_name}/video_info.csv",
             patch_info_csv=f"{VRRML_DATA}/ML_regression/{date_today}/{folder_name}/patch_info.csv",

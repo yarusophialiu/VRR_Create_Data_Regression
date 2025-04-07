@@ -1,21 +1,31 @@
 
+# # local pc
+# VRRMP4 = r'C:\Users\15142\Projects\VRR\VRRMP4'
+# VRRDATA = r'C:\Users\15142\Projects\VRR\Data'
+# VRRML_DATA = f'{VRRDATA}/VRRML'
+# VRR_Motion = r'C:\Users\15142\Projects\VRR\VRR_Motion'
+# VRR_Plot_HPC = r'C:\Users\15142\Projects\VRR\Data\VRR_Plot_HPC'
 
-VRRMP4 = r'C:\Users\15142\Projects\VRR\VRRMP4'
-VRRDATA = r'C:\Users\15142\Projects\VRR\Data'
-VRRML_DATA = f'{VRRDATA}/VRRML'
-VRR_Motion = r'C:\Users\15142\Projects\VRR\VRR_Motion'
-VRR_Plot_HPC = r'C:\Users\15142\Projects\VRR\Data\VRR_Plot_HPC'
+# titanium
+VRRML = r'D:\VRR_data\VRRML'
+VRRML_DATA = r'D:\VRR_data\VRRML'
+VRRMP4 = r'D:\VRR_data\VRR_MP4_old'
+VRRMP4_reference = r'D:\VRR_data\VRR_MP4_old\reference_videos'
+VRR_Patches = r'D:\VRR_data\VRR_Patches'
+VRR_Motion = r'D:\VRR\VRR_Motion'
+VRR_Plot_HPC = r'D:\VRR_data\VRR_Plot_HPC'
+
 
 scenes = [
-            # 'bedroom', 
-            # 'bistro', 
-            #  'crytek_sponza', 
-            #  'gallery', 
-            #  'living_room', 
-            #  'lost_empire', 
-            #  'room', 'suntemple',
-            'sibenik',
-             'suntemple_statue' 
+            'bedroom', 
+            'bistro', 
+             'crytek_sponza', 
+             'gallery', 
+             'living_room', 
+             'lost_empire', 
+             'room', 'suntemple',
+        #     'sibenik',
+        #      'suntemple_statue' 
         ]
 
 
