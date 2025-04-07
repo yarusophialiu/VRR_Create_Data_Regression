@@ -7,15 +7,15 @@ VRR_Motion = r'C:\Users\15142\Projects\VRR\VRR_Motion'
 VRR_Plot_HPC = r'C:\Users\15142\Projects\VRR\Data\VRR_Plot_HPC'
 
 scenes = [
-            # 'bedroom', 
-            # 'bistro', 
-            #  'crytek_sponza', 
-            #  'gallery', 
-            #  'living_room', 
-            #  'lost_empire', 
-            #  'room', 'suntemple',
-            'sibenik',
-             'suntemple_statue' 
+            'bedroom', 
+            'bistro', 
+             'crytek_sponza', 
+             'gallery', 
+             'living_room', 
+             'lost_empire', 
+             'room', 'suntemple',
+            # 'sibenik',
+            #  'suntemple_statue' 
         ]
 
 

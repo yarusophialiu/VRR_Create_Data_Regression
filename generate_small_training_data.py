@@ -4,9 +4,9 @@ import shutil
 from utils import *
 
 # TODO
-train_data_folder = f"{VRRML_DATA}/ml_regression/train"
-N = 30
-mode = 'test' # 'train'
+train_data_folder = f"{VRRML_DATA}/ml_regression/val"
+N = 20
+mode = 'val' # 'train' 'test' 'val'
 
 df_patch = pd.read_csv(f"{train_data_folder}/patch_info.csv")
 df_patch_small = df_patch.sample(n=N, random_state=42)
