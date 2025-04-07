@@ -231,7 +231,7 @@ def main(scene, reference_dir="reference",
 
             patch_filename = f"{video_id}_frame{frame_number}.jpg"
             patch_path_full = os.path.join(patches_output_dir, patch_filename)
-            # cv2.imwrite(patch_path_full, patch_bgr)
+            cv2.imwrite(patch_path_full, patch_bgr)
 
             # Add row to patch_info
             patch_info_rows.append({
@@ -245,7 +245,7 @@ def main(scene, reference_dir="reference",
         print(f'{frames_extracted} frames extracted for {video_id}.')
 
         cap.release()
-        break
+        # break
 
     # ------------------------------------------------------------------
     # 3) Save CSVs
